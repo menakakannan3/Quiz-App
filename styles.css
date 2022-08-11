@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(194,194,194,1) 0%);
+font-family: 'Poppins', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;/*to adjust the height*/
+overflow: hidden;
+margin: 0;
+}
+.quizcontainer{
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    max-width: 95vw;
+    overflow: hidden;
+}
+.quizhead{
+    padding: 4rem;
+}
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0%;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+.btnc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.btn {
+    width: 28.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: rgba(0, 0, 0, 0.708);
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:after {
+    content: "";
+    background: rgb(176, 176, 176);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
